@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title> Conversion App </title>
+<Script>
+function minuteToSecond(){
+var minutes = document.getElementById("min_id").value;
+var seconds = minutes * 60;
+document.getElementById('sec_id').innerHTML = seconds;
+}
+</script>
+
+</head>
+
+<body>
+<h1> Time Converter </h1>
+Amount of minutes : <input id = "min_id" type ="text"><br>
+<button type="button" onclick="minuteToSecond();">convert to seconds </button><br>
+Amount of seconds  :  <span id="sec_id"></span>
+</body>
+
+</html>
